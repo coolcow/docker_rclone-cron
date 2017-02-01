@@ -24,7 +24,7 @@ The available environment variables are:
   * ```PGID``` (default = **1000**)  
     The group id of the user created inside the docker container.
 
-> Use the environment variables ```PUID``` and ```PGID``` to execute rclone with the **uid** and **gid** of your user. This prevents permission problems while accessing your data.
+  > Use the environment variables ```PUID``` and ```PGID``` to execute rclone with the **uid** and **gid** of your user. This prevents permission problems while accessing your data.
 
 
   * crontab file:
