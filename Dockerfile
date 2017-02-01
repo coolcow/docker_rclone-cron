@@ -12,6 +12,7 @@ LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.name="rclone-cron" \
       org.label-schema.description="Docker farmcoolcow/rclone image using crond as default entrypoint." \
       org.label-schema.url="https://hub.docker.com/r/farmcoolcow/rclone-cron/" \
+      org.label-schema.license="GPL v3" \
       org.label-schema.vcs-ref=$VCS_REF \
       org.label-schema.vcs-url="https://github.com/farmcoolcow/docker_rclone-cron" \
       org.label-schema.vendor="coolcow.org" \
