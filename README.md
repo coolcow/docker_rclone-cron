@@ -34,7 +34,7 @@ The available environment variables are:
   > Take a look ast [the rclone command list](http://rclone.org/commands/) to see all the available commands.
   
   ```crontab
-  0 0 */2 * * flock -n ~/rclone.lock rclone sync --log-file /logs/rclone.$(date +%Y%m%d_%H%M%S).log /data cloudstorage: &
+  0 */2 * * * flock -n ~/rclone.lock rclone sync --log-file /logs/rclone.$(date +%Y%m%d_%H%M%S).log /data cloudstorage: &
   ```
   
   ---
