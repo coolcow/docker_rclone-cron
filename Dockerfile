@@ -6,19 +6,20 @@ MAINTAINER Jean-Michel Ruiz (coolcow) <mail@coolcow.org>
 
 ARG BUILD_DATE
 ARG VCS_REF
+ARG IMAGE_NAME
 ARG VERSION
 
-LABEL org.label-schema.build-date=$BUILD_DATE \
-      org.label-schema.name="rclone-cron" \
+LABEL maintainer="Jean-Michel Ruiz (coolcow) <mail@coolcow.org>" \
+      org.label-schema.build-date="$BUILD_DATE" \
       org.label-schema.description="Docker farmcoolcow/rclone image using crond as default entrypoint." \
-      org.label-schema.url="https://hub.docker.com/r/farmcoolcow/rclone-cron/" \
+      org.label-schema.name="$IMAGE_NAME" \
+      org.label-schema.schema-version="1.0" \
+      org.label-schema.url="https://hub.docker.com/r/$IMAGE_NAME/" \
       org.label-schema.license="GPL-3.0" \
       org.label-schema.vcs-ref=$VCS_REF \
       org.label-schema.vcs-url="https://github.com/farmcoolcow/docker_rclone-cron" \
       org.label-schema.vendor="coolcow.org" \
-      org.label-schema.version=$VERSION \
-      org.label-schema.schema-version="1.0"
-
+      org.label-schema.version="$VERSION"
 
 # Evironment variables
 
