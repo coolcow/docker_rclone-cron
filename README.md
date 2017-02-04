@@ -1,9 +1,6 @@
 # farmcoolcow/rclone-cron
 
-[![](https://img.shields.io/badge/  FROM  -farmcoolcow/rclone-lightgray.svg)](https://hub.docker.com/r/farmcoolcow/rclone) 
-[![](https://images.microbadger.com/badges/commit/farmcoolcow/rclone-cron.svg)](https://github.com/coolcow/docker_rclone-cron/commits/master) 
-[![](https://images.microbadger.com/badges/image/farmcoolcow/rclone-cron.svg)](https://microbadger.com/images/farmcoolcow/rclone-cron) 
-[![](https://images.microbadger.com/badges/license/farmcoolcow/rclone-cron.svg)](https://raw.githubusercontent.com/coolcow/docker_rclone-cron/master/LICENSE.txt)
+[![](https://img.shields.io/badge/  FROM  -farmcoolcow/rclone-lightgray.svg)](https://hub.docker.com/r/farmcoolcow/rclone) [![](https://images.microbadger.com/badges/commit/farmcoolcow/rclone-cron.svg)](https://github.com/coolcow/docker_rclone-cron/commits/master) [![](https://images.microbadger.com/badges/image/farmcoolcow/rclone-cron.svg)](https://microbadger.com/images/farmcoolcow/rclone-cron) [![](https://images.microbadger.com/badges/license/farmcoolcow/rclone-cron.svg)](https://raw.githubusercontent.com/coolcow/docker_rclone-cron/master/LICENSE.txt)
 
 ---
 
@@ -35,7 +32,7 @@ The available environment variables are:
   * crontab file:
   
   > Syncs your data directory with your cloud storage every two hours. Uses a lock file to prevent the execution if the previous execution is not yet finished. Creates a new unique log file in your logs directory.  
-  > Take a look ast [the rclone command list](http://rclone.org/commands/) to see all the available commands.
+  > Take a look at [the rclone command list](http://rclone.org/commands/) to see all the available commands.
   
   ```crontab
   0 */2 * * * flock -n ~/rclone.lock rclone sync --log-file /logs/rclone.$(date +%Y%m%d_%H%M%S).log /data cloudstorage: &
