@@ -50,7 +50,7 @@ The available environment variables are:
     -v <PATH_TO_YOUR_DATA>:/data \
     -v <PATH_TO_YOUR_CRONTAB>:/crontab \
     -v <PATH_TO_YOUR_LOGS>:/logs \
-    farmcoolcow/rclone
+    farmcoolcow/rclone-cron
   ```
   
   > Replace ```<PATH_TO_YOUR_CONF>``` with the file-path of your rclone configuration file.  
